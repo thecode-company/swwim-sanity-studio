@@ -1,16 +1,61 @@
-// First, we must import the schema creator
 import createSchema from 'part:@sanity/base/schema-creator'
-
-// Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
-// Then we give our schema to the builder and provide the result to Sanity
+// Singletons
+import singletonHome from './singletonHome'
+import singletonAbout from './singletonAbout'
+import singletonContact from './singletonContact'
+
+// Documents
+import services from './services'
+import clients from './clients'
+import team from './team'
+import news from './news'
+import authors from './authors'
+import socials from './socials'
+import newsCategories from './newsCategories'
+import caseStudies from './caseStudies'
+import caseStudyDeliverables from './caseStudyDeliverables'
+import legal from './legal'
+
+// Molecules 
+import imageCarousel from './molecules/imageCarousel/imageCarousel'
+import quote from './molecules/quote/quote'
+import stat from './molecules/statBlock/stat'
+import statBlock from './molecules/statBlock/statBlock'
+
+// Common
+import blockContent from './common/blockContent'
+import blockContentExtended from './common/blockContentExtended'
+import seo from './common/seo'
+import value from './common/value'
+
 export default createSchema({
-  // We name our schema
   name: 'default',
-  // Then proceed to concatenate our document type
-  // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    /* Your types here! */
+    singletonHome,
+    singletonAbout,
+    singletonContact,
+
+    services,
+    clients,
+    team,
+    news,
+    socials,
+    authors,
+    newsCategories,
+    caseStudies,
+    caseStudyDeliverables,
+    legal,
+
+    imageCarousel,
+    quote,
+    stat,
+    statBlock,
+
+    blockContent,
+    blockContentExtended,
+    seo,
+    value
   ]),
 })
