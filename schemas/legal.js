@@ -9,6 +9,14 @@ export default {
       name: "title",
       type: "string",
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'Content',
+      name: 'content',
+      type: 'array', 
+      of: [{type: 'block'}],
+      description: 'The content for this service which will appear in the expanded accordion',
+      validation: Rule => Rule.required()
     }
   ]
 }
