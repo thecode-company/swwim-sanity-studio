@@ -16,9 +16,21 @@ export default {
       validation: Rule => Rule.min(1)
     },
     {
-      title: "Caption",
+      title: "(Optional) Caption",
       name: 'caption',
       type: 'string',
+    },
+    {
+      title: "(Optional) Supporting Quote",
+      name: 'supportingQuote',
+      type: 'string',
+      description: "The quote that appears to the right of the image / carousel"
+    },
+    {
+      title: "(Optional) Supporting Quote Author",
+      name: 'supportingQuoteAuthor',
+      type: 'string',
+      description: "The Author of the quote that appears to the right, eg: 'Laura Farrand, Head of PR, Givenchy Parfums'"
     },
   ],
   preview: {

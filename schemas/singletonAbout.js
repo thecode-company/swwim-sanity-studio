@@ -45,6 +45,19 @@ export default {
       type: 'image',
     },
     {
+      title: "Instagram Images",
+      description: 'The 4 images that appear in the instagram section towards the bottom of the page.',
+      name: 'instagramImages',
+      type: 'array',
+      options: {
+        layout: 'grid'
+      },
+      of: [{
+        type: 'image'
+      }],
+      validation: Rule => Rule.required().min(4).max(4)
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'

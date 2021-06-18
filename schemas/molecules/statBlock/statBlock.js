@@ -4,6 +4,11 @@ export default {
   type: 'object',
   fields: [
     {
+      type: 'string',
+      name: 'heading',
+      description: 'The optional heading text for this stat block'
+    },
+    {
       type: 'array',
       name: 'stats',
       of: [{ type: 'stat' }]
