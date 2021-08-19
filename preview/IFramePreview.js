@@ -7,6 +7,11 @@ import SanityMobilePreview from 'sanity-mobile-preview'
 import styles from './IFramePreview.module.css'
 import { createUrl } from '../utils/resolveProductionUrl'
 
+/**
+ * Explore more examples of previews:
+ * https://www.sanity.io/blog/evolve-authoring-experiences-with-views-and-split-panes
+ */
+
 const IframePreview = props => {
   const { options } = props
   const { displayed } = props.document

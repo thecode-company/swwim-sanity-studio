@@ -53,7 +53,17 @@ export default {
         layout: 'grid'
       },
       of: [{
-        type: 'image'
+        type: 'image',
+        fields: [
+          {
+            name: 'instagramImageUrl',
+            type: 'url',
+            title: 'Instagram Link URL',
+            options: {
+              isHighlighted: true
+            }
+          },
+        ],
       }],
       validation: Rule => Rule.required().min(4).max(4)
     },
