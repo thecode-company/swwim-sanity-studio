@@ -18,6 +18,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Hero Supporting Image',
+      name: 'heroSupportingImage',
+      description: "The image weaved into the top right section of the hero area.",
+      type: 'image',
+      validation: Rule => Rule.required()
+    },
+    {
       title: '"Welcome" Section Heading',
       name: 'welcomeHeading',
       type: 'string',
