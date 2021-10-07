@@ -13,13 +13,21 @@ export default {
     {
       title: "Hero Image Carousel",
       description: 'The gallery of images for the hero carousel (requires min. 5)',
-      name: 'heroImageCarousel',
+      name: 'heroImageCarousell',
       type: 'array',
       options: {
         layout: 'grid'
       },
       of: [{
-        type: 'image'
+        type: 'image',
+        name: 'image',
+        fields: [
+          {
+            title: "(Optional) Video",
+            name: 'video',
+            type: 'string',
+          }
+        ],
       }],
       validation: Rule => Rule.min(5)
     },
