@@ -28,6 +28,12 @@ export default {
       type: 'image',
     },
     {
+      title: 'Image (Author)',
+      description: 'An avatar of the person (that is used as the avatar on blog posts)',
+      name: 'imageAuthor',
+      type: 'image',
+    },
+    {
       name: "order",
       title: "Order",
       type: "number",
