@@ -25,7 +25,7 @@ export default {
           {
             title: "(Optional) Video",
             name: 'video',
-            type: 'string',
+            type: 'file',
           }
         ],
       }],
