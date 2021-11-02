@@ -16,6 +16,12 @@ export default {
       type: 'image',
       description: 'The clients logo',
       validation: Rule => Rule.required()
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
     }
   ]
 }
