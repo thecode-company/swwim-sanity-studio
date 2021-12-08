@@ -62,6 +62,12 @@ export default {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
     }
   ],
   preview: {
