@@ -51,6 +51,27 @@ export default {
       validation: Rule => Rule.min(1)
     },
     {
+      title: "Welcome Section Insta Stories",
+      description: 'The gallery of images for the hero carousel (requires min. 1)',
+      name: 'welcomeSectionInstaStories',
+      type: 'array',
+      options: {
+        layout: 'grid'
+      },
+      of: [{
+        type: 'image',
+        name: 'image',
+        fields: [
+          {
+            title: "(Optional) Video",
+            name: 'video',
+            type: 'file',
+          }
+        ],
+      }],
+      validation: Rule => Rule.min(1)
+    },
+    {
       title: '"Just Getting On With It" Section Text',
       name: 'justGettingOnWithItText',
       type: 'array', 
