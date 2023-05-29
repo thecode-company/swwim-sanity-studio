@@ -5,12 +5,15 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import singletonHome from './singletonHome'
 import singletonAbout from './singletonAbout'
 import singletonContact from './singletonContact'
+import singletonPopups from './singletonPopups'
 
 // Documents
 import services from './services'
 import clients from './clients'
 import team from './team'
 import news from './news'
+import events from './events'
+import guides from './guides'
 import authors from './authors'
 import socials from './socials'
 import newsCategories from './newsCategories'
@@ -27,8 +30,11 @@ import statBlock from './molecules/statBlock/statBlock'
 // Common
 import blockContent from './common/blockContent'
 import blockContentExtended from './common/blockContentExtended'
+import blockContentGuides from './common/blockContentGuides'
 import seo from './common/seo'
 import value from './common/value'
+import singleImage from './molecules/singleImage/singleImage'
+import doubleImage from './molecules/doubleImage/doubleImage'
 
 export default createSchema({
   name: 'default',
@@ -36,11 +42,14 @@ export default createSchema({
     singletonHome,
     singletonAbout,
     singletonContact,
+    singletonPopups,
 
     services,
     clients,
     team,
     news,
+    events,
+    guides,
     socials,
     authors,
     newsCategories,
@@ -49,12 +58,15 @@ export default createSchema({
     legal,
 
     imageCarousel,
+    singleImage,
+    doubleImage,
     quote,
     stat,
     statBlock,
 
     blockContent,
     blockContentExtended,
+    blockContentGuides,
     seo,
     value
   ]),

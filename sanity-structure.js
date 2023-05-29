@@ -11,8 +11,11 @@ import {
   FiArchive,
   FiPhone,
   FiHeart,
+  FiZap,
+  FiDownload,
   FiLayers,
-  FiLifeBuoy
+  FiLifeBuoy,
+  FiStopCircle
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -75,7 +78,13 @@ export default () =>
               S.listItem().title('Deliverables').child(S.documentTypeList('caseStudyDeliverable').title('Deliverables')).icon(FiTag),
             ])).icon(FiCamera),
       S.divider(),
+      S.listItem().title('Events / Workshops').child(S.documentTypeList('events').title('Events / Workshops')).icon(FiZap),
+      S.divider(),
+      S.listItem().title('Guides / Downloads').child(S.documentTypeList('guides').title('Guides / Downloads')).icon(FiDownload),
+      S.divider(),
       S.listItem().title('Legal').child(S.documentTypeList('legal').title('Legal')).icon(FiArchive),
       S.divider(),
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact')).icon(FiPhone),
+      S.divider(),
+      S.listItem().title('Popups').child(S.editor().id('popups').schemaType('popups').documentId('singleton-popups')).icon(FiStopCircle),
     ]);

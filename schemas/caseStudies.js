@@ -25,16 +25,30 @@ export default {
       }],
       validation: Rule => Rule.min(1)
     },
+    // {
+    //   title: 'Deliverables',
+    //   name: 'deliverables',
+    //   description: 'The deliverables for this case study',
+    //   type: 'array',
+    //   of: [
+    //     {
+    //       type: 'reference',
+    //       to: [
+    //         {type: 'caseStudyDeliverable'}
+    //       ]
+    //     }
+    //   ],
+    // },
     {
-      title: 'Deliverables',
-      name: 'deliverables',
-      description: 'The deliverables for this case study',
+      title: 'Deliverables / Services',
+      name: 'services',
+      description: 'The deliverables / services for this case study',
       type: 'array',
       of: [
         {
           type: 'reference',
           to: [
-            {type: 'caseStudyDeliverable'}
+            {type: 'service'}
           ]
         }
       ],
@@ -42,9 +56,39 @@ export default {
     {
       title: "About",
       name: 'about',
-      description: 'A short paragraph about this case study',
+      description: 'A short paragraph about this case study that appears just below hero section',
       type: 'text',
       rows: 4,
+    },
+    {
+      title: 'Stats',
+      name: 'stats',
+      description: 'The stats that appear below the about paragraph just below the hero section',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          name: 'stat',
+          fields: [
+            {
+              title: "Stat Heading",
+              name: 'statHeading',
+              type: 'string',
+            },
+            {
+              title: "Stat Text",
+              name: 'statText',
+              type: 'string',
+            },
+          ]
+        }
+      ],
+    },
+    {
+      title: 'Content',
+      description: "The main content area, use the + button top right to add component blocks",
+      name: 'content',
+      type: 'blockContentGuides',
     },
     {
       name: 'slug',
