@@ -18,6 +18,19 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'External Website',
+      name: 'externalWebsite',
+      type: 'string',
+    },
+    {
+      title: 'Internal Case Study',
+      name: 'internalCaseStudy',
+      type: 'reference',
+      to: [
+        {type: 'caseStudy'},
+      ]
+    },
+    {
       name: "order",
       title: "Order",
       type: "number",

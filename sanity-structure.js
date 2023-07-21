@@ -87,4 +87,6 @@ export default () =>
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact')).icon(FiPhone),
       S.divider(),
       S.listItem().title('Popups').child(S.editor().id('popups').schemaType('popups').documentId('singleton-popups')).icon(FiStopCircle),
+      S.divider(),
+      S.listItem().title('Redirects').child(S.documentTypeList('redirect').title('Redirects')).icon(FiZap),
     ]);

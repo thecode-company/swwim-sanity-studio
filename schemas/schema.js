@@ -35,6 +35,7 @@ import seo from './common/seo'
 import value from './common/value'
 import singleImage from './molecules/singleImage/singleImage'
 import doubleImage from './molecules/doubleImage/doubleImage'
+import redirects from './redirects'
 
 export default createSchema({
   name: 'default',
@@ -49,6 +50,7 @@ export default createSchema({
     team,
     news,
     events,
+    redirects,
     guides,
     socials,
     authors,
