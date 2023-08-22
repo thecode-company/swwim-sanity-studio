@@ -4,6 +4,7 @@ const globalSlugs = {
   news: '/news',
   caseStudy: '/case-studies',
   events: '/events',
+  guides: '/downloads',
 }
 
 const secret = process.env.SANITY_STUDIO_SANITY_PREVIEW_SECRET

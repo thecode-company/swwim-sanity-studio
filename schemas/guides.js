@@ -41,6 +41,19 @@ export default {
       type: 'blockContentGuides',
     },
     {
+      title: "Signup Heading",
+      description: "The heading text for the signup area in the footer",
+      name: "newsletterSignupHeading",
+      type: "string"
+    },
+    {
+      title: "Signup Text",
+      description: "The text for the signup area in the footer",
+      name: "newsletterSignupText",
+      type: "text",
+      rows: 4,
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
