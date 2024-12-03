@@ -20,6 +20,7 @@ import newsCategories from './newsCategories'
 import caseStudies from './caseStudies'
 import caseStudyDeliverables from './caseStudyDeliverables'
 import legal from './legal'
+import signupForms from './signupForms'
 
 // Molecules 
 import imageCarousel from './molecules/imageCarousel/imageCarousel'
@@ -70,6 +71,7 @@ export default createSchema({
     blockContentExtended,
     blockContentGuides,
     seo,
-    value
+    value,
+    signupForms
   ]),
 })

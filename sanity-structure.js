@@ -15,7 +15,8 @@ import {
   FiDownload,
   FiLayers,
   FiLifeBuoy,
-  FiStopCircle
+  FiStopCircle,
+  FiMail
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -87,6 +88,8 @@ export default () =>
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact')).icon(FiPhone),
       S.divider(),
       S.listItem().title('Popups').child(S.editor().id('popups').schemaType('popups').documentId('singleton-popups')).icon(FiStopCircle),
+      S.divider(),
+      S.listItem().title('Signup Forms').child(S.documentTypeList('signupForm').title('Signup Forms')).icon(FiMail),
       S.divider(),
       S.listItem().title('Redirects').child(S.documentTypeList('redirect').title('Redirects')).icon(FiZap),
     ]);
