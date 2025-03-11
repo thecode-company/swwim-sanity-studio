@@ -13,14 +13,14 @@ export default {
     {
       title: 'Hero Image',
       name: 'heroImage',
-      description: "The image weaved into the bottom left section of the hero area.",
+      description: "The image weaved into the bottom left section of the hero area. Aspect ratio should be 2.75:1.",
       type: 'image',
       validation: Rule => Rule.required()
     },
     {
       title: 'Hero Supporting Image',
       name: 'heroSupportingImage',
-      description: "The image weaved into the top right section of the hero area.",
+      description: "The image weaved into the top right section of the hero area. Aspect ratio should be 2:1.",
       type: 'image',
       validation: Rule => Rule.required()
     },
