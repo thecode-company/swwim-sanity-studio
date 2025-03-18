@@ -30,6 +30,45 @@ export default {
       name: 'shareGraphic',
       type: 'image',
       description: 'Share graphics will be cropped to 1200x630'
+    },
+    {
+      title: 'Allow Search Engines to Index',
+      name: 'allowIndex',
+      type: 'boolean',
+      description: 'Toggle off to add a noindex meta tag and prevent search engines from indexing this page',
+      initialValue: true,
+    },
+    {
+      title: 'Advanced Robots Settings',
+      name: 'advancedRobots',
+      type: 'object',
+      options: {
+        collapsible: true,
+        collapsed: true,
+      },
+      fields: [
+        {
+          title: 'Allow Following Links',
+          name: 'allowFollow',
+          type: 'boolean',
+          description: 'Toggle off to add a nofollow directive',
+          initialValue: true,
+        },
+        {
+          title: 'Allow Image Indexing',
+          name: 'allowImageIndex',
+          type: 'boolean',
+          description: 'Toggle off to prevent image indexing',
+          initialValue: true,
+        },
+        {
+          title: 'Allow Archiving',
+          name: 'allowArchive',
+          type: 'boolean',
+          description: 'Toggle off to prevent search engines from showing cached versions',
+          initialValue: true,
+        }
+      ]
     }
   ]
 }
