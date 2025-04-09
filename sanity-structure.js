@@ -94,7 +94,7 @@ export default () =>
             .title('Case Studies')
             .items([
               S.listItem()
-              .title('Services Index')
+              .title('Case Studies Index')
               .icon(FiSettings)
               .child(
                 S.editor()
