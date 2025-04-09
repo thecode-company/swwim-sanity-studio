@@ -25,6 +25,33 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Scrolling Carousel Banner Items',
+      name: 'carouselBannerItems',
+      description: 'The text items that appear in the scrolling carousel banner (e.g., "Brand Strategy", "Events", etc.)',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+          name: 'item'
+        }
+      ],
+      initialValue: [
+        'Brand Strategy',
+        'Events',
+        'Influencer Marketing',
+        'Content Creation',
+        'Copywriting'
+      ],
+      validation: Rule => Rule.min(1).error('At least one item is required for the carousel banner')
+    },
+    {
+      title: '"Welcome" Section Subtext',
+      name: 'welcomeSubtext',
+      type: 'string',
+      initialValue: 'Collaborating with content specialists, influencers and all-round creative types, to make communicating your brand a balmy breeze.',
+      validation: Rule => Rule.required()
+    },
+    {
       title: '"Welcome" Section Heading',
       name: 'welcomeHeading',
       type: 'string',

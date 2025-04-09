@@ -11,6 +11,27 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'H1 Heading - Line 1',
+      name: 'headingLine1',
+      description: 'The first line of the H1 heading for the About page',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'H1 Heading - Line 2',
+      name: 'headingLine2',
+      description: 'The second line of the H1 heading for the About page',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'H1 Heading - Line 3',
+      name: 'headingLine3',
+      description: 'The third line of the H1 heading for the About page',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
       title: "Hero Image Carousel",
       description: 'The gallery of images for the hero carousel (requires min. 5)',
       name: 'heroImageCarousell',
@@ -47,10 +68,24 @@ export default {
       of: [{ type: 'value' }]
     },
     {
+      title: "Team Section Heading",
+      name: "teamSectionHeading",
+      type: 'string',
+      description: "The heading for the team section.",
+      validation: Rule => Rule.required()
+    },
+    {
       title: "In Page Image",
       name: "inPageImage",
       description: "The image above the instagram section.",
       type: 'image',
+    },
+    {
+      title: "Instagram Section Heading",
+      name: "instagramSectionHeading",
+      type: 'string',
+      description: "The heading for the instagram section.",
+      validation: Rule => Rule.required()
     },
     {
       title: "Instagram Images",

@@ -6,6 +6,8 @@ import singletonHome from './singletonHome'
 import singletonAbout from './singletonAbout'
 import singletonContact from './singletonContact'
 import singletonPopups from './singletonPopups'
+import singletonServices from './singletonServices'
+import singletonCaseStudies from './singletonCaseStudies'
 
 // Documents
 import services from './services'
@@ -45,6 +47,8 @@ export default createSchema({
     singletonAbout,
     singletonContact,
     singletonPopups,
+    singletonServices,
+    singletonCaseStudies,
 
     services,
     clients,

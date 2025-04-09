@@ -47,7 +47,26 @@ export default () =>
     .items([
       S.listItem().title('Home').child(S.editor().id('home').schemaType('home').documentId('singleton-home').views(getPreview('home'))).icon(FiHome),
       S.divider(),
-      S.listItem().title('Services').child(S.documentTypeList('service').title('Services')).icon(FiLayers),
+      S.listItem().title('Services').icon(FiLayers).child(
+        S.list()
+          .title('Services')
+          .items([
+            S.listItem()
+              .title('Services Index')
+              .icon(FiSettings)
+              .child(
+                S.editor()
+                  .id('servicesPage')
+                  .schemaType('servicesPage')
+                  .documentId('singleton-servicesPage')
+              ),
+            S.divider(),
+            S.listItem()
+              .title('Individual Services')
+              .schemaType('service')
+              .child(S.documentTypeList('service').title('Individual Services'))
+          ])
+      ),
       S.divider(),
       S.listItem().title('Clients').child(S.documentTypeList('client').title('Clients')).icon(FiHeart),
       S.divider(),
@@ -74,6 +93,15 @@ export default () =>
           S.list()
             .title('Case Studies')
             .items([
+              S.listItem()
+              .title('Services Index')
+              .icon(FiSettings)
+              .child(
+                S.editor()
+                  .id('caseStudiesPage')
+                  .schemaType('caseStudiesPage')
+                  .documentId('singleton-caseStudiesPage')
+              ),
               S.listItem().title('Case Studies').child(S.documentTypeList('caseStudy').title('Case Studies')).icon(FiCamera),
               S.divider(),
               S.listItem().title('Deliverables').child(S.documentTypeList('caseStudyDeliverable').title('Deliverables')).icon(FiTag),
@@ -92,4 +120,6 @@ export default () =>
       S.listItem().title('Signup Forms').child(S.documentTypeList('signupForm').title('Signup Forms')).icon(FiMail),
       S.divider(),
       S.listItem().title('Redirects').child(S.documentTypeList('redirect').title('Redirects')).icon(FiZap),
+      S.divider(),
+
     ]);
